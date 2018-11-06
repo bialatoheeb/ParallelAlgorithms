@@ -1,0 +1,31 @@
+#!/bin/sh
+
+echo
+echo
+echo "Run as ./T1 < # of threads >"
+echo
+echo
+echo ============== Final Time = 100 =====================
+
+echo -------------- 1 worker --------------------------
+
+mpiexec -n 1 ./main 100 $1
+
+
+echo -------------- 2 workers -------------------------
+
+mpiexec -n 2 ./main 100 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec -n 4 ./main 100 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec -n 8 ./main 100 $1
+
+
+echo -------------- 16 workers -------------------------
+mpiexec -n 16 ./main 100 $1

@@ -1,0 +1,187 @@
+#!/bin/sh
+
+echo
+echo
+echo "Run as ./T2 < # of threads >"
+echo
+echo
+echo ============== Final Time = 500 =====================
+
+echo -------------- 1 worker --------------------------
+
+/nfshome/rbutler/public/courses/pp6330/mpich3i/bin/mpiexec -n 1 ./main 500 $1
+
+
+echo -------------- 2 workers -------------------------
+mpiexec -n 2 ./main 500 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec -n 4 ./main 500 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec -n 8 ./main 500 $1
+
+
+echo -------------- 16 workers -------------------------
+
+mpiexec -n 16 ./main 500 $1
+
+
+echo
+echo
+echo
+echo
+echo ============== Final Time = 1000 =====================
+
+echo -------------- 1 worker --------------------------
+
+mpiexec -n 1 ./main 1000 $1
+
+
+echo -------------- 2 workers -------------------------
+
+mpiexec -n 2 ./main 1000 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec -n 4 ./main 1000 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec -n 8 ./main 1000 $1
+
+
+echo -------------- 16 workers -------------------------
+
+mpiexec -n 16 ./main 1000 $1
+
+echo
+echo
+echo
+echo
+echo ============== Final Time = 1500 =====================
+
+echo -------------- 1 worker --------------------------
+
+mpiexec -n 1 ./main 1500 $1
+
+
+echo -------------- 2 workers -------------------------
+
+mpiexec -n 2 ./main 1500 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec -n 4 ./main 1500 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec -n 8 ./main 1500 $1
+
+echo -------------- 16 workers -------------------------
+
+mpiexec -n 16 ./main 1500 $1
+
+
+echo
+echo
+echo
+echo
+echo ============== Final Time = 2000 =====================
+
+echo -------------- 1 worker --------------------------
+
+mpiexec -n 1 ./main 2000 $1
+
+
+echo -------------- 2 workers -------------------------
+
+mpiexec -n 2 ./main 2000 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec -n 4 ./main 2000 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec -n 8 ./main 2000 $1
+
+
+echo -------------- 16 workers -------------------------
+mpiexec -n 16 ./main 2000 $1
+
+
+exit 
+echo
+echo
+echo
+echo
+echo ============== Final Time = 2500 =====================
+
+echo -------------- 1 worker --------------------------
+
+mpiexec-n 1 ./main 2500 $1
+
+
+echo -------------- 2 workers -------------------------
+
+mpiexec-n 2 ./main 2500 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec-n 4 ./main 2500 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec-n 8 ./main 2500 $1
+
+
+echo -------------- 16 workers -------------------------
+
+mpiexec-n 16 ./main 2500 $1
+
+
+echo
+echo
+echo
+echo
+echo ============== Final Time = 3000 =====================
+
+echo -------------- 1 worker --------------------------
+
+mpiexec-n 1 ./main 3000 $1
+
+
+echo -------------- 2 workers -------------------------
+
+mpiexec-n 2 ./main 3000 $1
+
+
+echo -------------- 4 workers -------------------------
+
+mpiexec-n 4 ./main 3000 $1
+
+
+echo -------------- 8 workers -------------------------
+
+mpiexec-n 8 ./main 3000 $1
+
+
+echo -------------- 16 workers -------------------------
+
+mpiexec-n 16 ./main 3000 $1
+
+
+

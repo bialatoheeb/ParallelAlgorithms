@@ -1,0 +1,8 @@
+#!/bin/sh
+
+killall -9 emacs
+killall -9 mpiexec
+killall -9 TEMP
+killall -9 T*
+pkill -f TEMP
+
