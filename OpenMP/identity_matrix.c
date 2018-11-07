@@ -1,4 +1,4 @@
-#include <test_functions.h>
+#include "test_functions.h"
 
 
 void identity_matrix(double **matrix, int num, int num_thrds) {
