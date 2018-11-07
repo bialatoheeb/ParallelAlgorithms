@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "test_functions.h"
-#include <omp.h>
 
 double ** forward_substitution(double ** matrixB, double ** matrixA, int num){
 
