@@ -4,6 +4,8 @@
 #include <omp.h>
 #include <sys/time.h>
 
+#define PI 3.14159265358979323846
+
 
 double timestamp();
 void predictor_corrector(double **, double **, int, int, double, double, int);
