@@ -105,7 +105,7 @@ void  predictor_corrector(double **Uvec, double **matrixA, int numS, int numT, d
     if (my_rank != ROOT)
       MPI_Recv(temp_array, 1, send_type, tag, tag, MPI_COMM_WORLD, &status);
 
-    // After recv, copy to array of solution for use with the history term
+    // After recv, copy to array of solution for use by the history term
     for (k=1; k <= my_rank; k++){
       for (j=0; j < numS; j++){
 	Uvec[val + k][j] = temp_array[(k-1)*numS + j];
@@ -113,7 +113,7 @@ void  predictor_corrector(double **Uvec, double **matrixA, int numS, int numT, d
     }
 
    
-    // All ranks except ROOT computes the other "half" of thier history term 
+    // All ranks except ROOT computes the other "half" of their history term 
     if (my_rank != ROOT){
       if (i != 0)
 	history_term2 = history(Uvec, matrixA, intern_grid_points, alpha, val + 1, val + my_rank, val + my_rank);
