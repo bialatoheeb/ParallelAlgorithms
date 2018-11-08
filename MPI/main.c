@@ -86,7 +86,6 @@ int main(int argc, char *argv[])
     free(t);
     free_matrix(solution, num_time);
     free_matrix(arrayA, intern_grid_points);
-    MPI_Barrier(MPI_COMM_WORLD);
     MPI_Finalize();
     return 0;
 }
