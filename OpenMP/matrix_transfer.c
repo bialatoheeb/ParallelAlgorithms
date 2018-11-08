@@ -1,8 +1,5 @@
-#include<stdlib.h>
-#include <test_functions.h>
-#include <math.h>
-#include <omp.h>
-#define PI 3.14159265358979323846
+#include "test_functions.h"
+
 
 double **matrix_transfer( int num, double dx, double alpha, double diff_coeff){
   int i,j, k;
