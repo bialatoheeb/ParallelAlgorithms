@@ -93,7 +93,7 @@ void  predictor_corrector(double **Uvec, double **matrixA, int numS, int numT, d
       }
     }
 
-    // Get the next two line is the parallel part of this algroithm
+    // The next two line is the parallel part of this algroithm
     // Each rank computes I3 given in the paper
     val = i*num_ranks;
     history_term1 = history(Uvec, matrixA, intern_grid_points, alpha, 0, val, val + my_rank);
