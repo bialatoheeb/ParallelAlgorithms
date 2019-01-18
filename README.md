@@ -1,2 +1,2 @@
 # ParallelAlgorithms
-These programs simulates nonlinear time-space fractional PDEs using the shared and distributed memories.
+These programs simulates nonlinear time-space fractional PDEs using the shared and distributed memory systems
